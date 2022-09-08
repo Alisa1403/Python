@@ -8,3 +8,11 @@
 # 15 --> 3
 # 35 --> 5
 
+n = int(input("Введите число: "))
+if n > 1 and n < 106:
+    for i in range(2, n):
+        if n % i == 0:
+            print(i)
+            break
+else:
+    print("Ошибка! Вы ввели неправильное число!")
