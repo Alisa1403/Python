@@ -7,12 +7,16 @@
 # 5 -> 1 0 1 1 0
 # 2
 
-list = [0, 1, 1, 0, 0, 1, 1, 1, 1, 0, 0, 0, 0]
-k = 0
-for i in list:
-    if list[i] == 0:
-        k += 1
+from random import randint
+
+n = int(input("Введите число:"))
+n = [randint(0, 1) for i in range(n)]
+print(n)
+count=0
+for i in n:
+    if n[i] == 0:
+        count += 1
         i += 1
     else:
         i += 1
-print(k)
+print(count)
