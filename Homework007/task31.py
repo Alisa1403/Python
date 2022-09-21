@@ -1,9 +1,9 @@
 # values = [0,2,10,6]
-# same_by = lambda x: x%2, values
 # if same_by(lambda x: x%2, values):
 #     print('same')
 # else:
 #     print('different')
+
 def same_by(characteristic, objects):
     if not objects:
         return True
